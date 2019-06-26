@@ -18,11 +18,7 @@ public class DemoJdbc {
 		Statement unStml = null;
 		
 		try {
-			// Charge le pilote sql jdbc 42 
-//			DriverManager.deregisterDriver(new SQLServerDriver());
-			
-			
-//			String url = "jdbc:sqlserver://localhost:1433; databaseName=BDD_DEMO"; //1433 = port
+			// Tous les ids de connexions sont gérés dans JdbcTools.java
 			uneConnection = JdbcTools.getConnection();
 			
 			//Crée le statement
