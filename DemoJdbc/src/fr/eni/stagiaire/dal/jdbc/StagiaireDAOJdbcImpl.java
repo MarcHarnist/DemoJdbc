@@ -8,8 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.eni.stagiaire.bo.Stagiaire;
+import fr.eni.stagiaire.dal.StagiaireDAO;
 
-public class StagiaireDAOJdbcImpl {
+public class StagiaireDAOJdbcImpl implements StagiaireDAO{
 
 	private static final String SQL_SELECT_ALL = "select noStagiaire, nom, prenom, motDePasse from stagiaires";
 
@@ -55,5 +56,29 @@ public class StagiaireDAOJdbcImpl {
 		
 		return listeStagiaires;
 		
+	}
+
+	@Override
+	public void insert(Stagiaire s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Stagiaire s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Stagiaire s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Stagiaire selectById(int noStagiaire) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
