@@ -8,4 +8,5 @@ public class DAOFactory {
 		StagiaireDAO stagiaireDAO = new StagiaireDAOJdbcImpl();
 		return stagiaireDAO;
 	}
+	
 }
