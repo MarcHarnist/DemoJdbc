@@ -1,8 +1,10 @@
-package fr.eni.demoJdbc;
+package fr.eni.stagiaire.dal.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
+import fr.eni.stagiaire.dal.Settings;
 
 public class JdbcTools {
 	

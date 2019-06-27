@@ -1,4 +1,4 @@
-package fr.eni.demoJdbc;
+package fr.eni.stagiaire.dal;
 
 import java.io.IOException;
 import java.util.Properties;
