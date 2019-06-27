@@ -16,5 +16,4 @@ public class StagiaireDAOJdbcTest {
 			System.out.println(s);
 		}
 	}
-
 }
