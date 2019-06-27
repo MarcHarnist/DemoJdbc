@@ -1,15 +1,11 @@
 package fr.eni.stagiaire.dal.jdbc;
 
 import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.microsoft.sqlserver.jdbc.SQLServerDriver;
 
 import fr.eni.stagiaire.bo.Stagiaire;
 
@@ -27,13 +23,13 @@ public class StagiaireDAOJdbcImpl {
 		Statement unStml = null;
 		
 		try {
+			//Valorise la connexion
 			uneConnection = JdbcTools.getConnection();
 			
 			//Crée le statement
 			unStml = uneConnection.createStatement();
 			
 			//Crée une requête Sql
-			
 			ResultSet rs = unStml.executeQuery(SQL_SELECT_ALL);
 			
 			// Récupère les données dans un String Builder
