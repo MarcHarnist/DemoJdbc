@@ -6,7 +6,8 @@ public class Stagiaire {
 	private String prenom;
 	private String nom;
 	private String motDePasse;
-	/**
+	
+	/** Constructeur
 	 * @param noStagiaire
 	 * @param prenom
 	 * @param nom

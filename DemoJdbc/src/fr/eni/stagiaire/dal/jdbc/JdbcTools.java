@@ -13,7 +13,7 @@ public class JdbcTools {
 	private static String userdb;
 	private static String password;
 
-	// Bloque static qui sera utilisé une fois
+	// Bloc static qui sera utilisé une fois
 	static {
 		
 		try {
@@ -31,7 +31,6 @@ public class JdbcTools {
 		System.out.println(urldb);
 		System.out.println(userdb);
 		System.out.println(password);
-				
 	}
 	
 	public static Connection getConnection() throws SQLException {

@@ -51,7 +51,6 @@ public class StagiaireDAOJdbcImpl implements StagiaireDAO{
 		{
 				// Ferme la connection à la DB
 				JdbcTools.closeConnection(uneConnection);
-
 		}
 		
 		return listeStagiaires;
